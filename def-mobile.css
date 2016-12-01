@@ -1,0 +1,84 @@
+@media only screen and (max-width: 1050px){
+	html,body{
+		font-size: 8px;
+	}
+
+	p{padding: 20px;}
+
+	.header{
+		position: fixed;
+		z-index: 200;
+		width: 100%;
+		height: 60px;
+		background-color: white;
+	}
+
+	.header-img1{background: url('img/s/comp5.jpg') no-repeat 0% 90% fixed;background-size: cover;}
+	.header-img2{background: url('img/s/comp3.jpg') no-repeat 0% 70% fixed;background-size: cover;}
+	.bgb1{background: url('img/s/bike2.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc1{background: url('img/s/comp1.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc2{background: url('img/s/comp2.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc3{background: url('img/s/comp3.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc4{background: url('img/s/comp4.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc5{background: url('img/s/comp5.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc6{background: url('img/s/comp6.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc7{background: url('img/s/comp7.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc8{background: url('img/s/comp8.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgc9{background: url('img/s/comp9.jpg') no-repeat 0% 60% fixed; background-size: cover;}
+	.bgcc{background: url('img/s/code.png') no-repeat 0% 60% fixed; background-size: cover;}
+
+	.menu{width: 100%; height: 100%; top: 0;}
+	.logo{margin-left: 5%;}
+	#main-nav{display:none;opacity: 0;}
+	#nav-btn{
+		opacity: 1;
+		display: block;
+		margin-right: 5%;
+		width: 30px;
+		height: 30px;
+		float: right;
+		position: relative;
+		overflow: auto;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		transition: 0.4s;
+	}
+
+	#nav-btn span{
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: #000;
+		position: relative;
+		margin-top: 6.75px;
+	}
+
+	.box{width: 100%;}
+
+	.mobile_nav{
+		display: none;
+		opacity: 1;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #1f1c19;
+		z-index: 100;
+		text-align: center;
+		font-size: 6em;
+	}
+	.mobile_nav ul li{
+		margin-top: 20px;
+	}
+	.mobile_nav ul li a{color: #fff;}
+	.mobile_nav ul li a:hover{color: #232323;}
+
+	.nav-toggle{display: block;}
+
+	.header-text{height: 30px;}
+
+	.elements-list{margin-left:0px;}
+	.half-box{margin:0;}
+
+	#services{display: none;opacity: 0;}
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="def.css">
+	<!--<link rel="stylesheet" type="text/css" media="screen and (-webkit-device-pixel-ratio:3)" href="def-mobile.css">-->
+	<link rel="stylesheet" type="text/css" href="def-mobile.css" media="only screen and (max-width: 1050px)" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			var elements = $('#services').position();
+			var elementHeight = parseInt(elements.top);
+			var wheight = $(window).height();
+
+			$(window).scroll(function(){
+				var pos = $(window).scrollTop();
+
+				if (pos >= 701) {
+					$('#services').addClass('service-box');
+				}else{
+					$("#services").removeClass('service-box');
+				};
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="top" class="wrapper">
+		<div class="header">
+			<div class="menu">
+				<div class="logo"><a href="index.html"><h1>Locitos Design</h1></a></div>
+				<div id="nav-btn" class="nav">
+						<span id="lone"></span>
+						<span id="ltwo"></span>
+						<span id="lthree"></span>
+					</div>
+				<div id="main-nav" class="ulmen">
+					<ul>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mobile_nav">
+					<ul>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+				</div>
+		</div>
+		<div class="header-img">
+			<div class="header-text header-box">
+				<h1 class="text-white">Inspiring designs</h1>
+			</div>
+			<div class="header-text header-arrow">
+				<div class="text-white arrow"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="wide-box box">
+				<div id="services" class="box long-half-box servicebox">
+					<h2>Our Services</h2>
+					<ul class="service-list">
+						<li><a href="#prototype">Prototype development</a></li>
+						<li><a href="#design">Design</a></li>
+						<li><a href="#programming">Programming</a></li>
+						<li><a href="#seo">SEO</a></li>
+						<li><a href="#analytics">Analytics</a></li>
+						<li><a href="#hosting">Hosting</a></li>
+						<li><a href="#support">Support</a></li>
+					</ul>
+				</div>
+				<div id="prototype" class="box box-inline">
+					<h2>Prototype development</h2>
+					<p>We create a prototype based on your ideas and needs. Starting with a simple wiregrid prototype as to see how the layout will be. We work closely with our customers to design the website, that way we are able to capture the wanted design of each customer.</p>
+					<div class="box half-box proto-img">
+						<img class="proto-img" src="proto_bergluft.png">
+					</div>
+				</div>
+				<div id="design" class="box box-inline">
+					<h2>Design</h2>
+					<p>Based on the prototype we can design the website. Every aspect of it is well thought of and the customer's ideas are taken into consideration regarding color choice and more.</p>
+					<div class="box half-box proto-img">
+						<img class="proto-img" src="bergluft.png">
+					</div>
+				</div>
+				<div id="programming" class="box box-inline">
+					<h2>Programming</h2>
+					<p>Using the design agreed upon, the programming of the website can start. By working closely with the customer every step of the way ensures that the customer is always kept in the loop and we give regular status updates of the development of the website.</p>
+					<div class="box half-box proto-img">
+						<img class="proto-img" src="html-example.png">
+					</div>
+				</div>
+				<div id="seo" class="box box-inline">
+					<h2>Search Engine Optimization (SEO)</h2>
+					<p>We help you with getting your website out on the web. With SEO tools we make sure that search engines such as Google, or Bing can find your website and deliver them to the customers.</p>
+					<div class="box half-box se-img">
+						<img class="se-img" src="google.png">
+					</div>
+					<div class="box half-box se-img">
+						<img class="se-img" src="bing.png">
+					</div>
+					<div class="box half-box se-img">
+						<img class="se-img" src="duckduckgo.png">
+					</div>
+				</div>
+				<div id="analytics" class="box box-inline">
+					<h2>Analytics</h2>
+					<p>We provide you with analytical statistis tool offered by Google. Using the analytical tool you can see how many page visits you are getting and from where in the world.</p>
+					<div class="box half-box proto-img">
+						<img class="proto-img" src="analytics.png">
+					</div>
+				</div>
+				<div id="hosting" class="box box-inline">
+					<h2>Hosting</h2>
+					<p>We can handle all the hosting of our customers. We use a third-party hosting service based upon the needs of the customers and the functions of the website. If you already have a hosting service you just need to provide us with access to that and we will take care of the rest.</p>
+					<div class="box half-box proto-img">
+						<img class="proto-img" src="hosting2.png">
+					</div>
+				</div>
+				<div id="support" class="box box-inline">
+					<h2>Support</h2>
+					<p>After the development and initial deployment of the website we provide support service to our customers. If there is a problem with the website of any sort we discuss how to take care of it and fix it as soon as possible.</p>
+					<div class="box half-box proto-img">
+						<img class="proto-img" src="support.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	<div class="footer">
+		<div class="box">
+			<!--<form action="signup.php">
+				<input name="email" class="field-email" type="email" placeholder="Email Address"/><button class="btn-signup">Sign Up</button>
+			</form>-->
+			<div class="half-box text-white text-left">
+				<ul>
+					<li class="text-big">info@locitos.com</a></li>
+					<li>Locitos Designs</li>
+					<li>Skövde, Sweden</li>
+				</ul>
+			</div>
+			<div class="half-box text-white">
+				<ul class="social-media-list">
+					<li><a href=""><img class="sm-icon" src="fb.png"></a></li>
+					<li><a href=""><img class="sm-icon" src="twitter.png"></a></li>
+					<li><a href=""><img class="sm-icon" src="linkedin.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="btt"><a href="#top" id="tt">&uarr;</a></div>
+	</div>
+</body>
+</html>
